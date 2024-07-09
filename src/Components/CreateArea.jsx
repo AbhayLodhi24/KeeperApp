@@ -9,7 +9,7 @@ function CreateArea({size ,setSize}) {
         const content = e.target.children[1].value;
         
         // Retrieve existing notes from local storage, or initialize as an empty array
-        const notes = JSON.parse(localStorage.getItem("notes"));
+        const notes = JSON.parse(localStorage.getItem("notes")) | [];
 
         
         // Create a new note object
