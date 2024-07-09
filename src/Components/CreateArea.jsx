@@ -31,7 +31,7 @@ function CreateArea({size ,setSize}) {
         setSize(notes.length)
     }
   return (
-    <div>
+    <div >
       <form onSubmit={handleSubmit}>
         <input name="title" placeholder="Title" />
         <textarea name="content" placeholder="Take a note..." rows="3" />

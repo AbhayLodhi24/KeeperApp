@@ -26,11 +26,15 @@ body {
 }
 
 footer {
-  position: absolute;
-  text-align: center;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000; /* Ensures the footer stays on top */
 }
 
 footer p {
@@ -68,9 +72,10 @@ footer p {
   outline: none;
 }
 
+
 form {
   position: relative;
-  width: 480px;
+  width: min(480px,100vw);
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
