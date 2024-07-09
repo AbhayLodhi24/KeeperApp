@@ -17,7 +17,9 @@ const handleDelete = (noteObj)=>{
 }
 
 useEffect(()=>{
-  setNotes(JSON.parse(localStorage.getItem("notes")));
+  const storedNotes = JSON.parse(localStorage.getItem("notes")) || [];
+  setNotes(storedNotes);
+  setSize(storedNotes.length);
 },[size]);
 
   return (
